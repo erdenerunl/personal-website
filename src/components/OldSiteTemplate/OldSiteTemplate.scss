@@ -1,0 +1,43 @@
+$old-header-font: "Old Standard TT", serif;
+$old-border-color: rgb(92, 90, 90);
+$old-border: 5px double $old-border-color;
+
+h1, h3 {
+    margin: 0 !important;
+    font-weight: 700 !important;
+}
+
+* {
+
+  font-family: $old-header-font;
+}
+
+header {
+  border: $old-border;
+}
+
+.old-header {
+  font-family: $old-header-font;
+}
+
+.banner-wrapper {
+  width: 100%;
+  height: 75px;
+  overflow: hidden;
+  position: relative;
+
+  .banner {
+    background-image: url("../../assets/images/vintage-banner.jpg");
+    z-index: 9999;
+    position: absolute;
+    width: 100%;
+    height: 75px;
+  }
+}
+
+.section {
+    border: $old-border;
+    display: flex;
+    flex-direction: column;
+    
+}

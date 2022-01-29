@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,EAAE,CAAC;EACC,MAAM,EAAE,CAAC,CAAA,UAAU;CACtB;;AAED,AAAA,MAAM,CAAC;EACH,MAAM,EAAE,GAAG,CAAC,KAAK,CAPF,OAAkB;CAQpC;;AAED,AAAA,WAAW,CAAC;EACR,WAAW,EAZG,iBAAiB,EAAE,KAAK;CAczC",
+    "sources": [
+        "OldSiteTemplate.scss"
+    ],
+    "names": [],
+    "file": "OldSiteTemplate.css"
+}
