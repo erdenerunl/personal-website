@@ -12,12 +12,26 @@ h1, h3 {
   font-family: $old-header-font;
 }
 
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+  position: relative;
+  min-height: 100%;
+}
+
 header {
   border: $old-border;
 }
 
 .old-header {
   font-family: $old-header-font;
+}
+
+section {
+  padding-bottom: 30px;
 }
 
 .banner-wrapper {
@@ -39,5 +53,11 @@ header {
     border: $old-border;
     display: flex;
     flex-direction: column;
-    
+}
+
+.footer-container {
+  position: absolute;
+  bottom: 0;
+  height: 30px;
+  padding: 0 1rem 0;
 }
