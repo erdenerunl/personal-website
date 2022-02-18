@@ -1,8 +1,8 @@
 import "./OldSiteTemplate.scss";
 
-const OldSiteTemplate = () => {
+const OldSiteTemplate = ({childToParent}) => {
   return (
-    <div className="wrapper">
+    <div className="wrapper glass-effect">
       <header>
         <div className="container py-3">
           <div className="row">
@@ -44,8 +44,9 @@ const OldSiteTemplate = () => {
             <div className="col-6 section">
               <h1 className="text-center p-2">Hi, I'm Erdener and It's my Personal Website.</h1>
               <h3 className="text-center p-2">Frontend Developer && Part-time Poet</h3>
-              <div className="section-list">
-
+              <div className="text-center">There is one of my works:</div>
+              <div className="d-flex justify-content-center pt-4" >
+                <button className="px-2 py-3" onClick={childToParent(true)} > Click to modernize this site. </button>
               </div>
             </div>
             <div className="col-3 section">
@@ -54,17 +55,61 @@ const OldSiteTemplate = () => {
               </div>
               <div className="section-list">
                 <ul>
-                  <li><a target="_blank" rel="noreferrer noopener" href="https://www.w3schools.com/html/">HTML5</a></li>
-                  <li><a target="_blank" rel="noreferrer noopener" href="https://www.w3schools.com/css/">CSS</a></li>
-                  <li><a target="_blank" rel="noreferrer noopener" href="https://sass-lang.com/guide">SCSS</a></li>
-                  <li><a target="_blank" rel="noreferrer noopener" href="https://www.javascript.com/">JavaScript</a></li>
-                  <li><a target="_blank" rel="noreferrer noopener" href="https://www.typescriptlang.org/">TypeScript</a></li>
-                  <li><a target="_blank" rel="noreferrer noopener" href="https://angular.io/docs">Angular</a></li>
-                  <li><a target="_blank" rel="noreferrer noopener" href="https://tr.reactjs.org/">React.js</a></li>
-                  <li><a target="_blank" rel="noreferrer noopener" href="https://vuejs.org/">Vue.js</a></li>
-                  <li><a target="_blank" rel="noreferrer noopener" href="https://nodejs.org/en/">Node.js</a></li>
-                  <li><a target="_blank" rel="noreferrer noopener" href="https://git-scm.com/">Git</a></li>
-                  <li><a target="_blank" rel="noreferrer noopener" href="https://www.mongodb.com/">MongoDB</a></li>
+                  <li>
+                    <a target="_blank" rel="noreferrer noopener" href="https://www.w3schools.com/html/">
+                      HTML5
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" rel="noreferrer noopener" href="https://www.w3schools.com/css/">
+                      CSS
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" rel="noreferrer noopener" href="https://sass-lang.com/guide">
+                      SCSS
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" rel="noreferrer noopener" href="https://www.javascript.com/">
+                      JavaScript
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" rel="noreferrer noopener" href="https://www.typescriptlang.org/">
+                      TypeScript
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" rel="noreferrer noopener" href="https://angular.io/docs">
+                      Angular
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" rel="noreferrer noopener" href="https://tr.reactjs.org/">
+                      React.js
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" rel="noreferrer noopener" href="https://vuejs.org/">
+                      Vue.js
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" rel="noreferrer noopener" href="https://nodejs.org/en/">
+                      Node.js
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" rel="noreferrer noopener" href="https://git-scm.com/">
+                      Git
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" rel="noreferrer noopener" href="https://www.mongodb.com/">
+                      MongoDB
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -72,9 +117,7 @@ const OldSiteTemplate = () => {
         </div>
       </section>
       <footer>
-        <div className="footer-container">
-        © 2022 | This website built for Erdener Ünal by Erdener Ünal.
-        </div> 
+        <div className="footer-container">© 2022 | This website built for Erdener Ünal by Erdener Ünal.</div>
       </footer>
     </div>
   );
